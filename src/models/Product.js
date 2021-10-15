@@ -6,23 +6,29 @@ const Schema = new mongoose.Schema({
         type: String,
         required: true
     },
+
     productDescription: {
         type: String
     },
+
     productPrice: {
         type: Number,
         required: true
     },
+
     productQuantity: {
         type: Number,
         required: true
     },
+
     productImage: {
         type: String
     },
+    
     username: {
         type: mongoose.Schema.Types.ObjectId,
-        ref:'User'
+        ref: 'User',
+        required: true
     }
 })
 
